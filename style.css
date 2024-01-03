@@ -1,0 +1,330 @@
+body {
+    background: linear-gradient(118deg, #1560D4 2.08%, rgba(180, 41, 166, 0.56) 101.39%);
+    font-family:'Montserrat', sans-serif;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 700px) {
+    .Container {
+        display: block;
+    }
+}
+
+.Rectangle1 {
+    position: relative;
+    width: min(50%, 450px);
+    max-width: 600px;
+    padding: 56px 22px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 700px) {
+    .Rectangle1 {
+        width: 100%;
+    }
+}
+
+.Rectangle1 img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Information1 {
+    transform: translateZ(0);
+}
+
+.Day {
+    padding-left: 32px;
+    padding-top: 0px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Date {
+    padding-left: 32px;
+    padding-top: 16px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Location {
+    padding-left: 32px;
+    padding-top: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Location img {
+    width: 27px;
+    height: 27px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.Sun img {
+    width: 95px;
+    height: 95px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-left: 32px;
+    padding-top: 200px;
+}
+
+.Temperature {
+    padding-left: 32px;
+    padding-top: 9px;
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Weather {
+    padding-left: 32px;
+    padding-top: 13px;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Rectangle2 {
+    position: relative;
+    width: min(50%, 450px);
+    flex-shrink: 0;
+    border-radius: 0 25px 25px 0;
+    background: #222831;
+    padding: 55px;
+}
+
+@media (max-width: 700px) {
+    .Rectangle2 {
+        width: 85%;
+    }
+}
+
+.Table2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.List_Element {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    line-height: 1px;
+}
+
+.Element {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.Measure {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.Weather_Cards {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .Card {
+        padding: 4%;
+    }
+}
+
+.Card_1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #272E37;
+    box-shadow: 1px 2px 4px 0 px #222831;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.Card_1 img {
+    filter: invert(100%);
+    width: 55px;
+    height: 55px;
+}
+
+.Card_1_Day {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Card_1_Temperature {
+    color: #000;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Card_2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #272E37;
+    box-shadow: 1px 2px 4px 0 px #222831;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+.Card_2 img {
+    filter: invert(100%);
+    width: 70px;
+    height: 70px;
+}
+
+.Card_2_Day {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Card_2_Temperature {
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Card_3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #272E37;
+    box-shadow: 1px 2px 4px 0 px #222831;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+.Card_3 img {
+    filter: invert(100%);
+    width: 70px;
+    height: 70px;
+}
+
+.Card_3_Day {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Card_3_Temperature {
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Card_4 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #272E37;
+    box-shadow: 1px 2px 4px 0 px #222831;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+.Card_4 img {
+    width: 55px;
+    height: 55px;
+}
+
+.Card_4_Day {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Card_4_Temperature {
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Change_Location_Btn button {
+    height: 56px;
+    width: 438px;
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(91deg,
+        rgba(144, 217, 224, 0.90) 0.2%,
+        rgba(84, 96, 230, 0.90) 100%);
+        color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.Change_Location_Btn button img {
+    margin-right: 8px;
+}
